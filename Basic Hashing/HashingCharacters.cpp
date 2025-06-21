@@ -9,7 +9,7 @@ int main() {
     cin>>numQueries;
 
     //precompute:
-    int hash[26] = {};
+    int hash[26] = {0};
     for(int index = 0 ; index< str.size(); index++){
         hash[str[index] - 'a']+=1; // increase the count of that char
     }

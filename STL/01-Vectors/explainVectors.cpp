@@ -18,7 +18,7 @@ void explainVectors(){
   if you have defined size 5 , you can push any element and it will
    modift it;s sizr relatively*/
   /* if you dont want to declare this with 100 you can do this */
-vector<int> v4(5); 
+vector<int> v4;
 /* what it does is declared vector of size 5 with all 5 instances
 declared with 0 or any garbadge value (depends on compiler)*/
 /* what if we want to copy this vecotr v3 in some othe vector say 
