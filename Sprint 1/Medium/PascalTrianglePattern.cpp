@@ -1,26 +1,29 @@
-#include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
 
-// Function to print pascal triangle pattern.
-void pascalTriangle(int n)
-{
-    for (int row = 0; row < n; row++)
-    {
-        int C = 1;
-        for (int col = 0; col <= row; col++)
-        {
-            cout << C << " ";
-            C = C * (row - col) / (col + 1);
+int pascalPatternUptoRow(int n){
+        for(int row = 0 ; row < n ; row++){
+              int C = 1;
+              //spaces:
+              for(int j = 0 ; j<(n-(row+1)) ; j++){
+                cout<<"  ";
+              }
+              for(int col = 0 ; col < row+1 ; col++){
+                  cout << C << " "<<" ";
+                  C = C * (row - col) / (col + 1);
+              }
+              cout<<endl;
         }
-        cout << endl;
-    }
+
 }
 
-int main()
-{
-    int n;
-    cin >> n;
-    pascalTriangle(n);
+int main() {
+  
+  int row;
+  cin>>row;
 
-    return 0;
+   pascalPatternUptoRow(row);
+
+
+  return 0;
 }
