@@ -32,3 +32,6 @@ int main() {
     cout<<"Single digit sum of "<<n<<" is "<<ans;
     return 0;
 }
+
+
+/* Use modulo 9 trick! */

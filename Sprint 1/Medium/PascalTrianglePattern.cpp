@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int pascalPatternUptoRow(int n){
+void pascalPatternUptoRow(int n){
         for(int row = 0 ; row < n ; row++){
               int C = 1;
               //spaces:
